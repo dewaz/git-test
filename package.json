@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/dewaz/git-test/issues"
   },
-  "homepage": "https://github.com/dewaz/git-test#readme"
+  "homepage": "https://github.com/dewaz/git-test#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
