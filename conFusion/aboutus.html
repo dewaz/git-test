@@ -39,11 +39,93 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <button type="button" class="btn btn-warning btn-block">Reserve Table </button
+                    <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveModal">Reserve Table </button>
+
+
                 </div>
             </div>
         </div>
     </header>
+    <div class="row mb-3 ">
+      <div class="col-6 col-sm-12">
+    <div class="card mb-3">
+      <h5 class="card-header bg-warning text-white ">  </h5>
+      <div class="card-body">
+      <form>
+        <div class="form-group">
+          <div class="row">
+                  </div>
+        </div>
+      </div>
+
+      <div class="row">
+            </div>
+      <div class="row">
+
+      </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+
+
+    <div id="reserveModal" class="modal" role="dialog" >
+      <div role="content" class="modal-dialog-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Reserve a Table</h4>
+            <button id="close" type="button" data-dismiss="modal">
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group col-sm4">
+                <label class="sr-only"> Number of Guests</label>
+
+                  <input type="radio" name="noofguests" id="1" value="1">
+                  <label for="1">1</label>
+
+                  <input type="radio" name="noofguests" id="2" value="2">
+                  <label for="2">2</label>
+
+                  <input type="radio" name="noofguests" id="3" value="3">
+                  <label for="3">3</label>
+
+                  <input type="radio" name="noofguests" id="4" value="4">
+                  <label for="4">4</label>
+
+                  <input type="radio" name="noofguests" id="5" value="5">
+                  <label for="5">5</label>
+
+                  <input type="radio" name="noofguests" id="6" value="5">
+                  <label for="6">6</label>
+
+              </div>
+
+              <div class="form-group col-sm4">
+                <label class="sr-only" for="">Date and Time </label>
+
+                  <input type="date" placeholder="Date" class="form-control form-control-sm mr-1" id="reserveDate"></input>
+                  <input type="time" placeholder="Time" class="form-control form-control-sm mr-1" id="reserveTime"></input>
+
+                </div>
+
+              <div class="form-group col-sm4">
+                <button class="btn bg-success  btn-sm ml-1">Reserve</button>            
+              </div>
+
+            </form>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
 
     <div class="container">
         <div class="row  ">
@@ -205,7 +287,7 @@
             </dl>
         </div>
     </div>
-    <!--      </div>-->
+       </div>
         </div>
         <div class="row">
         <div class="col-sm-6">
@@ -221,57 +303,9 @@
               </div>
           </div>
 </div>
+
           <!-- RESERVE TABLE !-->
-          <div class="row mb-3 ">
-            <div class="col-6 col-sm-12">
-          <div class="card mb-3">
-            <h5 class="card-header bg-warning text-white "> Reserve a Table </h5>
-            <div class="card-body">
-            <form>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-3 col-md-6"> Number of Guests</div>
-                  <div class="col">
-                    <input type="radio" name="noofguests" id="1" value="1">
-                    <label for="1">1</label>
 
-                    <input type="radio" name="noofguests" id="2" value="2">
-                    <label for="2">2</label>
-
-                    <input type="radio" name="noofguests" id="3" value="3">
-                    <label for="3">3</label>
-
-                    <input type="radio" name="noofguests" id="4" value="4">
-                    <label for="4">4</label>
-
-                    <input type="radio" name="noofguests" id="5" value="5">
-                    <label for="5">5</label>
-
-                    <input type="radio" name="noofguests" id="6" value="5">
-                    <label for="6">6</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-3 mb-3">Date and Time </div>
-              <div class="col">
-                <input type="date" placeholder="Date" class="form-control"></input>
-                <input type="time" placeholder="Time" class="form-control"></input>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <button class="btn bg-success text-white">Reserve</button>
-              </div>
-            </div>
-
-              </div>
-            </form>
-          </div>
-</div>
-  </div>
-</div>
 
     <footer class="footer">
         <div class="container">
