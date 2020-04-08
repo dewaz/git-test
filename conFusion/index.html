@@ -33,7 +33,7 @@
         </ul>
       </div>
       <span class="navbar-text">
-        <a data-toggle="modal" data-target="#loginModal">
+        <a id="loginBtn">
           <span class="fa fa-sign-in">Login</span>
         </a>
       </span>
@@ -46,7 +46,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Login</h4>
-        <button id="close" type="button" data-dismiss="modal">
+        <button id="closeLogin" type="button" ><span class="fa fa-close"></span> </button>
       </div>
       <div class="modal-body">
         <form>
@@ -79,6 +79,60 @@
   </div>
 </div>
 
+
+    <div id="reserveModal" class="modal" role="dialog" >
+      <div role="content" class="modal-dialog-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Reserve a Table</h4>
+            <button id="close" type="button" data-dismiss="modal"><span class="fa fa-close"></span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group col-sm4">
+                <label class="sr-only"> Number of Guests</label>
+
+                  <input type="radio" name="noofguests" id="1" value="1">
+                  <label for="1">1</label>
+
+                  <input type="radio" name="noofguests" id="2" value="2">
+                  <label for="2">2</label>
+
+                  <input type="radio" name="noofguests" id="3" value="3">
+                  <label for="3">3</label>
+
+                  <input type="radio" name="noofguests" id="4" value="4">
+                  <label for="4">4</label>
+
+                  <input type="radio" name="noofguests" id="5" value="5">
+                  <label for="5">5</label>
+
+                  <input type="radio" name="noofguests" id="6" value="5">
+                  <label for="6">6</label>
+
+              </div>
+
+              <div class="form-group col-sm4">
+                <label class="sr-only" for="">Date and Time </label>
+
+                  <input type="date" placeholder="Date" class="form-control form-control-sm mr-4" id="reserveDate"></input>
+                  <input type="time" placeholder="Time" class="form-control form-control-sm mt-4" id="reserveTime"></input>
+
+                </div>
+
+              <div class="form-group col-sm4">
+                <button class="btn bg-success  btn-sm ml-1">Reserve</button>
+              </div>
+
+            </form>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container" >
             <div class="row row-header">
@@ -90,9 +144,9 @@
                       <img src="img/logo.png" class="img-fluid">
                   </div>
                   <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning"  data-toggle="tooltip" data-placement="bottom" data-html="true" title="Call Us <br><strong>9851236547</strong>" >
-                      Reserve Table
-                    </a>
+
+                      <button class="btn btn-block  nav-link btn-warning " id="reserveBtn">Reserve</button>
+
                     </div>
 
             </div>
@@ -142,6 +196,7 @@
                 <li data-target="#mycarousel" data-slide-to="1"></li>
                 <li data-target="#mycarousel" data-slide-to="2"></li>
               </ul>
+
 
 
             </div>
@@ -271,28 +326,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $('#mycarousel').carousel({interval:1000 });
-        $('#carousel-button').click(function(){
-          if($('#carousel-button').children('span').hasClass("fa-pause")){
-            $('#mycarousel').carousel('pause');
-            $('#carousel-button').children('span').removeClass("fa-pause")
-            $('#carousel-button').children('span').addClass("fa-play")
-          }
-          else if($('#carousel-button').children('span').hasClass("fa-play"){
-            $('#mycarousel').carousel('cycle');
-            $('#carousel-button').children('span').removeClass("fa-play")
-            $('#carousel-button').children('span').addClass("fa-pause")
-          }
-
-
-        });
-  
-      });
-
-  </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
